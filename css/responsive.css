@@ -47,4 +47,7 @@
     .accordion-item{
         margin-top: 3rem;
     }
+    .footer-list{
+        flex-direction: column;
+    }
 }
