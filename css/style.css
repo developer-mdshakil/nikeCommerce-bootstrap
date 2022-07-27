@@ -47,3 +47,8 @@ span,strong,a,button,p{
     font-weight: 700;
     color: #FA804C;
 }
+/************* benefit-section ************/
+.benefit-img img{
+    width: 4.5rem;
+    height: 4.5rem;
+}
