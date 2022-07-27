@@ -1,0 +1,49 @@
+/* google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/************ common css **************/
+h1,h2,h3{
+    font-family: 'Bebas Neue', cursive;
+}
+span,strong,a,button,p{
+    font-family: 'Roboto', sans-serif;
+}
+.bg-purperl{
+    background-color: #FFF9F4;
+}
+.p-6{
+    padding-left: 8.063rem;
+    padding-right: 8.063rem;
+    padding-top: 1.75rem;
+    padding-bottom: 8.063rem;
+}
+.text-color{
+    color: #FA804C;
+}
+/******* nav-area css start *************/
+.navbar-brand img{
+    width: 18.188rem;
+    height: 3.438rem;
+}
+.nav-link{
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .5s ease-in-out;
+}
+.nav-link:hover{
+    color: #ff5200 !important;
+}
+/************** carousel-item *************/
+.carousel-item h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+/********* casualshoes-section css start **************/
+.card-img{
+    background-color: #F1F1F1;
+    height: 75%;
+}
+.card .price{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #FA804C;
+}
