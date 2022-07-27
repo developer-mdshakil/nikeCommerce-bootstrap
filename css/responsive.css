@@ -1,0 +1,50 @@
+
+/*********** responsive start css *************/
+/* mobile-device */
+@media only screen and (max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+    .navbar{
+        align-items: center;
+    }
+    .navbar-brand{
+        width: 8rem;
+        height: 1rem;
+    }
+    .navbar-brand img{
+        width: 100%;
+        height: auto;
+    }
+    .p-6{
+        padding-left: 0;
+        padding-right: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    .slider-img{
+        width: 100%;
+        padding-top: 1.563rem;
+    }
+    .carousel-item .row{
+        flex-direction: column-reverse;
+        padding-top: 3.25rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .carousel-item h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .benefit-area{
+        flex-direction: column-reverse;
+        margin-right: 0.313rem;
+        margin-left: 0.313rem;
+    }
+    .benefit-img{
+        flex-direction: column;
+    }
+    .accordion-item{
+        margin-top: 3rem;
+    }
+}

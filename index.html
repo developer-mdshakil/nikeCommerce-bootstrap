@@ -15,35 +15,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- stylesheet-css link -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- responsive-stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
       <!-- header-area start -->
+      <!-- nav-bar start -->
       <header class="bg-purperl mb-5">
-        <!-- nav-area start -->
-        <nav class="navbar navbar-expand-lg pt-4">
-            <div class="container">
-              <a class="navbar-brand" href="#"><img src="images/icons/logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link link-dark active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">Product</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link link-dark" href="#">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/icons/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link link-dark active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-dark">Contact Us</a>
+                </li>
+              </ul>
             </div>
-          </nav>
+          </div>
+        </nav>
           <!-- nav-area end-->
           <!-- slider-section start -->
           <section class="slider-section">
@@ -51,43 +53,130 @@
               <div class="carousel-inner">
                 <div class="carousel-item active p-6">
                   <div class="row d-flex align-items-center justify-content-around">
-                    <div class="col-lg-7">
-                      <img class="w-75" src="images/slider-1.png" alt="">
+                    <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
+                      <img class="slider-img w-75" src="images/slider-1.png" alt="">
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
                       <h1 class="text-uppercase"><span class="text-color d-inline-block">Nike React</span> 
                         Infinity Run 2</h1>
                         <p>Fashionable Nike Infinity for Men.Nike React <br> 
                           Infinity Run 2</p>
-                          <button type="button" class="btn btn-primary text-uppercase"><span class="me-2"><i class="fas fa-shopping-cart"></i></span>Buy Now</button>
+                          <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary px-4 rounded-4 text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                          <span class="me-2"><i class="fas fa-shopping-cart"></i></span>Buy Now
+                          </button>
+  
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel7">Add to Card</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center">
+                                  <img class="w-25" src="images/slider-1.png" alt="">
+                                  <div class="ms-5">
+                                    <h5>This is a longer card with supporting.Fashionable Nike Infinity for Men.Nike React
+                                      Infinity Run</h5>
+                                    <h4>NIKE REACT INFINITY RUN 2</h4>
+                                    <span class="price">$234</span>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                  <button type="button" class="btn btn-primary">Add Cart</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--- modal-end ------>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item p-6">
                   <div class="row d-flex align-items-center justify-content-around">
-                    <div class="col-lg-7">
-                      <img class="w-75" src="images/slider-2.png" alt="">
+                    <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
+                      <img class="slider-img w-75" src="images/slider-2.png" alt="">
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
                       <h1 class="text-uppercase"><span class="text-color d-inline-block">Nike React</span>
                         Infinity Run 2</h1>
                         <p>Fashionable Nike Infinity for Men.Nike React <br> 
                           Infinity Run 2</p>
-                          <button type="button" class="btn btn-primary text-uppercase"><span class="me-2"><i class="fas fa-shopping-cart"></i></span>Buy Now</button>
+                          <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary px-4 rounded-4 text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                          <span class="me-2"><i class="fas fa-shopping-cart"></i></span>Buy Now
+                          </button>
+  
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel8">Add to Card</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center">
+                                  <img class="w-25" src="images/slider-2.png" alt="">
+                                  <div class="ms-5">
+                                    <h5>This is a longer card with supporting.Fashionable Nike Infinity for Men.Nike React
+                                      Infinity Run</h5>
+                                    <h4>NIKE REACT INFINITY RUN 2</h4>
+                                    <span class="price">$334</span>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                  <button type="button" class="btn btn-primary">Add Cart</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--- modal-end ------>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item p-6">
                   <div class="row d-flex align-items-center justify-content-around">
-                    <div class="col-lg-7">
-                      <img class="w-75" src="images/slider-3.png" alt="">
+                    <div class="col-sm-12 col-md-12 col-lg-7 col-xl-5">
+                      <img class="slider-img w-75" src="images/slider-3.png" alt="">
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5">
                       <h1 class="text-uppercase"><span class="text-color d-inline-block">Nike React</span> 
                         Infinity Run 2</h1>
                         <p>Fashionable Nike Infinity for Men.Nike React <br> 
                           Infinity Run 2</p>
-                          <button type="button" class="btn btn-primary text-uppercase"><span class="me-2"><i class="fas fa-shopping-cart"></i></span>Buy Now</button>
+                          <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary px-4 rounded-4 text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal9">
+                          <span class="me-2"><i class="fas fa-shopping-cart"></i></span>Buy Now
+                          </button>
+  
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel9">Add to Card</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center">
+                                  <img class="w-25" src="images/slider-3.png" alt="">
+                                  <div class="ms-5">
+                                    <h5>This is a longer card with supporting.Fashionable Nike Infinity for Men.Nike React
+                                      Infinity Run</h5>
+                                    <h4>NIKE REACT INFINITY RUN 2</h4>
+                                    <span class="price">$434</span>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                  <button type="button" class="btn btn-primary">Add Cart</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--- modal-end ------>
                     </div>
                   </div>
                 </div>
@@ -111,7 +200,7 @@
           <div class="container">
             <h1 class="hero-title">CASUAL SHOES</h1>
             <div class="row">
-              <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4">
                 <div class="col">
                   <div class="card h-100 p-3 shadow-lg border-0 rounded-4">
                     <div class="card-img rounded-4">
@@ -251,7 +340,7 @@
           <div class="container">
             <h1 class="hero-title mt-5">Formal shoes</h1>
             <div class="row">
-              <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-4">
                 <div class="col">
                   <div class="card h-100 p-3 shadow-lg border-0 rounded-4">
                       <img src="images/formalshoes-1.png" class="card-img-top" alt="...">
@@ -383,8 +472,8 @@
         <!-- benefit-section start -->
         <section class="py-5">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
+            <div class="row benefit-area">
+              <div class="col-sm-12 col-md-12 col-lg-5">
                 <div class="row">
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item shadow-lg px-3 rounded-4 mb-4">
@@ -447,7 +536,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-7">
+              <div class="col-sm-12 col-md-12 col-lg-7">
                 <img class="img-fluid" src="images/XMLID 1.png" alt="">
               </div>
             </div>
